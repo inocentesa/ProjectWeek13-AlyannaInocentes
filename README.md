@@ -73,8 +73,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly [available], in addition to restricting [traffic] to the network.
 
-* What aspect of security do load balancers protect? A load balancer protects against Distributed Denial-of-Service (DDoS) attacks.
-* What is the advantage of a jump box? A Jump Box controls access to other machines by allowing connections from specific IP addresses, then forwarding those connections to their repsective machines.
+- What aspect of security do load balancers protect? A load balancer protects against Distributed Denial-of-Service (DDoS) attacks.
+- What is the advantage of a jump box? A Jump Box controls access to other machines by allowing connections from specific IP addresses, then forwarding those connections to their repsective machines.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the [Logs] and system [traffic].
 *What does Filebeat watch for? Filebeat watches and collects data about the file system.
@@ -95,12 +95,12 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-*Only the [Jump-Box-Provisioner] machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- Only the [Jump-Box-Provisioner] machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 98.115.XXX.XX/32
 
-*Machines within the network can only be accessed by [Jump-Box through SSH].
-Which machine did you allow to access your ELK VM? Jump-Box-Provisioner.
-What is the machines IP address? 138.91.114.101
+Machines within the network can only be accessed by [Jump-Box through SSH].
+- Which machine did you allow to access your ELK VM? Jump-Box-Provisioner.
+- What is the machines IP address? 138.91.114.101
 
 A summary of the access policies in place can be found in the table below.
 
@@ -115,19 +115,20 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.
 
-*What is the main advantage of automating configuration with Ansible? Automating with Ansible allows you create consistent, reproducable results throughout multiple machine configurations.
-The playbook implements the following tasks:
+What is the main advantage of automating configuration with Ansible? Automating with Ansible allows you create consistent, reproducable results throughout multiple machine configurations.
+- The playbook implements the following tasks:
 
 Explain the steps of the ELK installation play.
-Install docker.io
-Install python3.pip
-Install docker module
-Increase virtual memory
-Use more memory
+- Install docker.io
+- Install python3.pip
+- Install docker module
+- Increase virtual memory
+- Use more memory
+
 Download and lauch a docker elk container through published ports:
-5601:5601
-9200:9200
-5044:5044
+- 5601:5601
+- 9200:9200
+- 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
