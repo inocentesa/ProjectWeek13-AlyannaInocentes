@@ -151,6 +151,7 @@ These Beats allow us to collect the following information from each machine:
 
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see.
 - Filebeat: Filebeat monitors the log files or locations that you specify, such as Syslogs, visualized by Kibana below.
+![ELK_DIAGRAM](https://github.com/inocentesa/ProjectWeek13-AlyannaInocentes/blob/main/scripts/ansible/Images/Filebeat%20Visual.JPG)
 - Metricbeat: Metricbeat monitors the metrics and statistics of the operating system, such as CPU usage, visualized by Kibana below.
 ![ELK_DIAGRAM](https://github.com/inocentesa/ProjectWeek13-AlyannaInocentes/blob/main/scripts/ansible/Images/metricbeat.JPG)
 
