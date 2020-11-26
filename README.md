@@ -80,10 +80,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 *What does Filebeat watch for? Filebeat watches and collects data about the file system.
 *What does Metricbeat record? Metricbeat records and collects operating machine metrics.
 
-[Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
-
-Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.]
-
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
@@ -127,7 +123,8 @@ The playbook implements the following tasks:
 - ... [systemctl -w vm.max_map_counts=26144]
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![ELK_Docker](https://github.com/inocentesa/ProjectWeek13-AlyannaInocentes/blob/main/scripts/ansible/Images/Elkstack.JPG)
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
