@@ -132,10 +132,9 @@ Download and lauch a docker elk container through published ports:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-
 ![ELK_Docker](https://github.com/inocentesa/ProjectWeek13-AlyannaInocentes/blob/main/scripts/ansible/Images/Elkstack.jpg)
 
-
+### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
 - eb-1: 10.1.0.13
@@ -145,8 +144,8 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 
-*Filebeat
-*Metricbeat
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 *Filebeat: Filebeat monitors the log files or locations that you specify, such as Syslogs, visualized by Kibana below.
