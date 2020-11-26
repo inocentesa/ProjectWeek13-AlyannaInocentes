@@ -112,31 +112,42 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_[you can put a command from multiple servers into a single playbook.]
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.
 
+*What is the main advantage of automating configuration with Ansible? Automating with Ansible allows you create consistent, reproducable results throughout multiple machine configurations.
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ... [install docker IO]
-- ... [install python pip]
-- ... [install docker]
-- ... [systemctl -w vm.max_map_counts=26144]
+
+Explain the steps of the ELK installation play.
+Install docker.io
+Install python3.pip
+Install docker module
+Increase virtual memory
+Use more memory
+Download and lauch a docker elk container through published ports:
+5601:5601
+9200:9200
+5044:5044
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![ELK_Docker](https://github.com/inocentesa/ProjectWeek13-AlyannaInocentes/blob/main/scripts/ansible/Images/Elkstack.JPG)
+
+![ELK_Docker](https://github.com/inocentesa/ProjectWeek13-AlyannaInocentes/blob/main/scripts/ansible/Images/Elkstack.jpg)
 
 
-### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_[Web-1 10.1.0.13]
-[Web-2 10.1.0.14]
+
+*eb-1: 10.1.0.13
+*eb-2: 10.1.0.14
+*eb-3: 10.1.0.11
+*LK: 10.2.0.5
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
-[Filebeat and MetricBeat]
+
+*Filebeat
+*Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._ [File Beat collect the changes done.][MetricBeat collects metrics and statistic.]
+*Filebeat: Filebeat monitors the log files or locations that you specify, such as Syslogs, visualized by Kibana below.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
