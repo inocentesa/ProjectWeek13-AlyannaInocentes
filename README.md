@@ -106,7 +106,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly | Allowed IP Addresses |
 |----------|----------|----------------------|
-| Jump-Box | Yes      | 138.91.114.101       |
+| Jump-Box | Yes      | 138.91.X.X/32      |
 | Web-1    | No       | 10.1.0.13             |
 | Web-2    | No       | 10.1.0.14             |
 | ELKVM    | NO       | 10.2.0.5             |
