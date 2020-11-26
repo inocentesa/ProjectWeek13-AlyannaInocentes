@@ -137,10 +137,10 @@ The following screenshot displays the result of running `docker ps` after succes
 
 This ELK server is configured to monitor the following machines:
 
-*eb-1: 10.1.0.13
-*eb-2: 10.1.0.14
-*eb-3: 10.1.0.11
-*LK: 10.2.0.5
+- eb-1: 10.1.0.13
+- eb-2: 10.1.0.14
+- eb-3: 10.1.0.11
+- LK: 10.2.0.5
 
 We have installed the following Beats on these machines:
 
