@@ -150,17 +150,27 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 *Filebeat: Filebeat monitors the log files or locations that you specify, such as Syslogs, visualized by Kibana below.
 
-### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
-SSH into the control node and follow the steps below: 
-- Copy the [yml] file to [ansible].
-- Update the [config] file to include...
-- Run the playbook, and navigate to [kibana] to check that the installation worked as expected.
+SSH into the control node and follow the steps below:
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_[file beat config file.] [/etc/ansible/hosts]
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ [edit etc host file to webservers/elk server ip addresses.]
-- _Which URL do you navigate to in order to check that the ELK server is running? [http://20.48.45.227:5601/app/kibana#/home]
+Copy the .yml file to the ansible directory.
+Update the config file to include remote users, host ip address, and published ports.
+Run the playbook, and navigate to the Kibana website to check that the installation worked as expected.
+Answer the following questions:
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Which file is the playbook? .yml file.
+Where do you copy it? /etc/ansible, /etc/ansible/files, and /etc/ansible/roles depending on the .yml file.
+Which files do you update to make Ansible run the playbook on a specific machine? /etc/ansible/hosts and /etc/ansible/ansible.cfg.
+How do I specify which machine to install the ELK server on versus which to install Filebeat on? Editing the /etc/ansible/hosts file with the approriate IP addresses.
+Which URL do you navigate to in order to check that the ELK server is running? http://<local.host>/app/kibana#/home.
+As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+
+nano /etc/ansible/ansible.cfg
+nano /etc/ansible/hosts
+ansible all -m ping
+nano <your-playbook.yml>
+ansible-playbook <your-playbook.yml>
+ssh ansible@<XX.X.X.X>
+curl <local.host>/setup.php
