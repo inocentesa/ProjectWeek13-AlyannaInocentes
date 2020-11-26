@@ -1,3 +1,6 @@
+###ELK_STACK_PROJECT
+In this project, I set up a cloud monitoring system by configuring an ELK stack server.
+
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
